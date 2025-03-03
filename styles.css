@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif; /* Используем Arial */
+    background-color: #121212; /* Темный фон */
+    color: #ffffff; /* Белый текст */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #1e1e1e; /* Темный фон для контейнера */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* Белый текст для заголовка */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffffff; /* Белый текст для меток */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Светло-серый бордер */
+    border-radius: 4px;
+    background-color: #2a2a2a; /* Темный фон для полей ввода */
+    color: #ffffff; /* Белый текст для полей ввода */
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaaaaa; /* Светло-серый текст для плейсхолдеров */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Зеленая кнопка */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838; /* Темно-зеленый при наведении */
+}

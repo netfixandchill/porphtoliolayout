@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Создание Портфолио</h1>
+        <form id="portfolioForm" onsubmit="return generatePDF(event)">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required>
+
+            <label for="contact">Контактная информация:</label>
+            <input type="text" id="contact" required>
+
+            <label for="education">Образование:</label>
+            <input type="text" id="education" required>
+
+            <label for="experience">Опыт работы:</label>
+            <textarea id="experience" required></textarea>
+
+            <label for="projects">Проекты:</label>
+            <textarea id="projects" required></textarea>
+
+            <label for="skills">Навыки:</label>
+            <input type="text" id="skills" required>
+
+            <label for="hobbies">Хобби:</label>
+            <input type="text" id="hobbies" required>
+
+            <label for="photo">Прикрепить фото:</label>
+            <input type="file" id="photo" accept="image/*">
+
+            <button type="submit">Скачать Портфолио</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
